@@ -20,10 +20,27 @@
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+
+
 /* Header */
 
 header {
     background-color: hsl(26.7deg 81.96% 50%);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar {
@@ -31,13 +48,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-gender a {
+    margin-right: 1rem;
+}
+
+.navbar-logo {
+    height: 100%;
+    padding: 20px 0;
+}
+
+.navbar-user a {
+    text-align: end;
+    margin-left: 1rem;
 }
 
 /* Main */
 
-main>.container:first-child {
-    padding: 30px 0;
+main {
+    padding: 100px 0;
 }
+
 
 .row {
     display: flex;
