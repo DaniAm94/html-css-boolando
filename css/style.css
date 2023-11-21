@@ -27,8 +27,12 @@ a {
 }
 
 img {
-    max-height: 100%;
-    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.xs-padding {
+    padding: 2px 5px;
 }
 
 
@@ -41,6 +45,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar {
@@ -60,6 +65,11 @@ header {
     padding: 20px 0;
 }
 
+.navbar-logo img {
+    max-height: 100%;
+    width: auto;
+}
+
 .navbar-user a {
     text-align: end;
     margin-left: 1rem;
@@ -68,22 +78,88 @@ header {
 /* Main */
 
 main {
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 -1rem;
+    align-items: flex-start;
 }
 
 .item {
-    background-color: lightblue;
-    height: 500px;
     flex-basis: calc(100% / 3);
     padding: 1rem;
+    height: auto;
+}
+
+.card {
+    height: 100%;
+    position: relative;
+}
+
+.heart {
+    background-color: white;
+    font-size: 2rem;
+    padding: 5px;
+    padding-left: 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.label {
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    display: flex;
+    gap: 5px;
+}
+
+.discount {
+    background-color: red;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.brend {
+    text-transform: capitalize;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.price {
+    color: red;
+    font-weight: 900;
+}
+
+.full-price {
+    text-decoration: line-through;
+}
+
+.secondary-img {
+    display: none;
+}
+
+.card:hover .secondary-img {
+    display: inline-block;
+}
+
+.card:hover .primary-img {
+    display: none;
+}
+
+.heart:hover {
+    color: red;
 }
 
 /* Footer */
