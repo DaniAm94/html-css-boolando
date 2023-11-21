@@ -23,7 +23,6 @@
 a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 img {
@@ -58,6 +57,7 @@ header {
 
 .navbar-gender a {
     margin-right: 1rem;
+    font-weight: bold;
 }
 
 .navbar-logo {
@@ -93,6 +93,10 @@ main {
     flex-basis: calc(100% / 3);
     padding: 1rem;
     height: auto;
+}
+
+.item a {
+    color: black;
 }
 
 .card {
