@@ -4,3 +4,64 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.border {
+    border: 2px dashed black;
+}
+
+.bg-black {
+    background-color: hsl(0deg 0% 10.2%);
+    color: white;
+}
+
+/* Header */
+
+header {
+    background-color: hsl(26.7deg 81.96% 50%);
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main */
+
+main>.container:first-child {
+    padding: 30px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.item {
+    background-color: lightblue;
+    height: 500px;
+    flex-basis: calc(100% / 3);
+    padding: 1rem;
+}
+
+/* Footer */
+
+footer {
+    height: 100px;
+}
+
+footer .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
